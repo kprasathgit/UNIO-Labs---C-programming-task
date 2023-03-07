@@ -1,0 +1,61 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int n ,m;
+int main() 
+{
+     printf("Enter the size of the array ONE:");
+    scanf("%d",&n);
+    printf("\nEnter the size of the array TWO:");
+    scanf("%d",&m);
+    int a[n],b[m],c[n+m];
+    
+     printf("\nEnter integer elements for array ONE:"); 
+       for(int i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    printf("\nEnter integer elements for array TWO:");
+    for(int i=0;i<m;i++)
+        scanf("%d",&b[i]);
+    
+    
+    if(n<m)
+    {
+    for(int i=0;i<n;i++)
+        c[i]=a[i]+b[i];
+        
+    for(int i=n;i<m;i++)
+        c[i]= b[i];
+        
+      printf("\nThe addition of two integer array is:");
+       for(int i=0;i<m;i++)
+        printf("%d\t",c[i]);    
+    }
+    
+   else if(n >m)
+    {
+    for(int i=0;i<m;i++)
+        c[i]=a[i]+b[i];
+        
+    for(int i=m;i<n;i++)
+        c[i]= a[i];
+        
+      printf("\nThe addition of two integer array is:");
+       for(int i=0;i<n;i++)
+        printf("%d\t",c[i]);    
+    } 
+    
+  else 
+    {
+    for(int i=0;i<m;i++)
+        c[i]=a[i]+b[i];
+        
+      printf("\nThe addition of two integer array is:");
+       for(int i=0;i<n;i++)
+        printf("%d\t",c[i]);    
+    } 
+    
+  
+  
+
+    return 0;
+}
