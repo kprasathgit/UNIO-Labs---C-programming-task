@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() 
+{
+     int a[3][3],b[3][3],c[3][3];
+  
+ // Reading elements for first 3x3 array.   
+     printf("\nEnter integer elements for first 3x3 matrix:"); 
+     for(int i=0;i<3;i++)
+     {
+        for(int j=0;j<3;j++) 
+        {
+          scanf("%d",&a[i][j]);
+        }
+     }
+ 
+ // Reading elements for second 3x3 array.    
+     printf("\nEnter integer elements for second 3x3 matrix:"); 
+     for(int i=0;i<3;i++)
+     {
+        for(int j=0;j<3;j++) 
+        {
+          scanf("%d",&b[i][j]);
+        }
+     }
+       
+// Subracting two arrays.       
+     for(int i=0;i<3;i++)
+     {
+        for(int j=0;j<3;j++) 
+        {
+          c[i][j] = a[i][j] - b[i][j];
+        }
+     }
+ 
+ // Printing the subraction result.     
+    printf("\nSubraction of two integer arrays :\n"); 
+     for(int i=0;i<3;i++)
+     {
+        for(int j=0;j<3;j++) 
+        {
+          printf("%d\t",c[i][j]); 
+        }
+        printf("\n");
+     }
+     
+    return 0;
+}
