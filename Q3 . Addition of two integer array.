@@ -19,7 +19,7 @@ int main()
     for(int i=0;i<m;i++)
         scanf("%d",&b[i]);
     
-//Executes if size first array is greater than second array.    
+//Executes if size of first array is greater than second array.    
     if(n<m)
     {
     for(int i=0;i<n;i++)
@@ -34,7 +34,7 @@ int main()
         printf("%d\t",c[i]);    
     }
    
- //Executes if size second array is greater than first array.   
+ //Executes if size of second array is greater than first array.   
    else if(n >m)
     {
     for(int i=0;i<m;i++)
